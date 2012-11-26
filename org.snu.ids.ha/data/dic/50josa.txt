@@ -1,0 +1,297 @@
+// =============================================================================
+// 주격 조사 (JKS)
+// =============================================================================
+가:{[가/JKS]#(N,XSN,ETN,EC,JX,S,O,JKB)@(모음)}
+이:{[이/JKS]#(N,XSN,ETN,EC,JX,S,O,JKB)@(자음)}
+서:{[서/JKS]#(N,XSN,ETN,JX,S,O)}
+에서:{[에서/JKS]#(N,XSN,ETN,JX,S,O)}
+라서:{[라서/JKS]#(N,XSN,ETN,JX,S,O)@(모음)}
+이라서:{[이라서/JKS]#(N,XSN,ETN,JX,S,O)@(자음)}
+께서:{[께서/JKS]#(N,XSN,S,O)}
+께옵서:{[께옵서/JKS]#(N,XSN,S,O)}
+께옵선:{[께옵서/JKS+ㄴ/JX]#(N,XSN,S,O)}
+설랑:{[서/JKS+ㄹ랑/JX]#(N,XSN,ETN,JX,S,O)}
+에설랑:{[에서/JKS+ㄹ랑/JX]#(N,XSN,ETN,JX,S,O)}
+
+// =============================================================================
+// 보격 조사 (JKC)
+// =============================================================================
+이:{[이/JKC]#(N,XSN,ETN,JX,S,O)@(자음)}
+가:{[가/JKC]#(N,XSN,ETN,JX,S,O)@(모음)}
+
+// =============================================================================
+// 관형격 조사 (JKG)
+// =============================================================================
+의:{[의/JKG]#(N,XSN,J,EC,EF,MAG,S,O)}
+
+// =============================================================================
+// 목적격 조사 (JKO)
+// =============================================================================
+//ㄹ:{[ㄹ/JKO]#(N,XSN,ETN,JX,S,O)&(ㄹ)@(모음)}
+을:{[을/JKO]#(N,XSN,ETN,JX,S,O)&(ㄹ)@(자음)}
+를:{[를/JKO]#(N,XSN,ETN,JX,S,O)&(ㄹ)@(모음)}
+와:{[와/JKO]#(N,XSN,ETN,JX,S,O)@(모음)}
+과:{[과/JKO]#(N,XSN,ETN,JX,S,O)@(자음)}
+더러:{[더러/JKO]#(N,XSN,S,O)}
+보고:{[보고/JKO]#(N,XSN,JX,S,O)}
+에게:{[에게/JKO]#(N,XSN,JX,S,O)}
+에다가:{[에다가/JKO]#(N,XSN,ETN,S,O)}
+한테:{[한테/JKO]#(N,XSN,JX,S,O)}
+한테로:{[한테/JKO+로/JKB]#(N,XSN,S,O)}
+한테서:{[한테서/JKO]#(N,XSN,S,O)}
+
+// =============================================================================
+// 부사격 조사 (JKB)
+// =============================================================================
+로:{[로/JKB]#(N,XSN,ETN,EC,JX,JKB,S,O)@(모음)}
+로:{[로/JKB]#(N,XSN,S,O)@(ㄹ)}
+으로:{[으로/JKB]#(N,XSN,ETN,EC,JX,JKB,S,O)@(자음)}
+으론:{[으로/JKB+ㄴ/JX]#(N,XSN,ETN,EC,JX,JKB,S,O)}
+루:{[로/JKB]#(N,XSN,ETN,EC,JX,JKB,S,O)@(모음)}
+루:{[로/JKB]#(N,XSN,S,O)@(ㄹ)}
+으루:{[으로/JKB]#(N,XSN,ETN,EC,JX,JKB,S,O)@(자음)}
+에:{[에/JKB]#(N,XSN,ETN,S,O)}
+와:{[와/JKB]#(N,XSN,ETN,JX,JKB,S,O)@(모음)}
+로서:{[로서/JKB]#(N,XSN,ETN,JX,S,O)@(모음)}
+로선:{[로서/JKB+는/JX]#(N,XSN,ETN,JX,S,O)&(F)@(모음)}
+로서:{[로서/JKB]#(N,XSN,ETN,JX,S,O)@(ㄹ)}
+로선:{[로서/JKB+는/JX]#(N,XSN,ETN,JX,S,O)&(F)@(ㄹ)}
+으로서:{[으로서/JKB]#(N,XSN,ETN,JX,S,O)@(자음)}
+로써:{[로써/JKB]#(N,XSN,ETN,JX,S,O)@(모음)}
+로써:{[로써/JKB]#(N,XSN,ETN,JX,S,O)@(ㄹ)}
+으로써:{[으로써/JKB]#(N,XSN,ETN,JX,S,O)@(자음)}
+보다:{[보다/JKB]#(N,XSN,ETN,JX,S,O)}
+에게:{[에게/JKB]#(N,XSN,JX,S,O)}
+엔:{[에/JKB+는/JX]#(N,XSN,JX,S,O)&(F)}
+께:{[께/JKB]#(N,XSN,JX,S,O)}
+에로:{[에/JKB+로/JKB]#(N,XSN,ETN,JX,S,O)}
+에를:{[에/JKB+를/JKB]#(N,XSN,ETN,JX,S,O)}
+에서:{[에서/JKB]#(N,XSN,ETN,JX,S,O)}
+에선:{[에서/JKB+는/JX]#(N,XSN,ETN,JX,S,O)&(F)}
+서:{[서/JKB]#(N,XSN,ETN,S,O)}
+선:{[서/JKB+는/JX]#(N,XSN,ETN,S,O)&(F)}
+에설랑:{[에서/JKB+ㄹ랑/JX]#(N,XSN,ETN,JX,S,O)}
+설랑:{[서/JKB+ㄹ랑/JX]#(N,XSN,ETN,JX,S,O)}
+에야:{[에/JKB+야/JKB]#(N,XSN,ETN,JX,S,O)}
+처럼:{[처럼/JKB]#(N,XSN,ETN,JX,S,O)}
+말마따나:{[말/NNG+마따나/JKB]}
+에게서:{[에게서/JX]#(N,XSN,ETN,JX,S,O)}
+에다가:{[에/JKB+다가/JX]#(N,XSN,ETN,JX,S,O)}
+//라고:{[라고/JKB]#(N,XSN,ETN,JX,S,O)}
+//라곤:{[라고/JKB+는/JX]#(N,XSN,ETN,JX,S,O)}
+같이:{[같이/JKB]#(N,XSN,ETN,JX,S,O)}
+같인:{[같이/JKB+는/JX]#(N,XSN,ETN,JX,S,O)}
+처럼:{[처럼/JKB]#(N,ETN,J,S,O)}
+보고:{[보고/JKB]#(N,XSN,ETN,J,S,O)}
+보곤:{[보고/JKB+ㄴ/JX]#(N,XSN,ETN,J,S,O)}
+보다:{[보다/JKB]#(N,XSN,ETN,J,S,O)}
+보단:{[보다/JKB+ㄴ/JX]#(N,XSN,ETN,J,S,O)}
+과:{[과/JKB]#(N,XSN,ETN,JX,S,O)@(자음)}
+와:{[와/JKB]#(N,XSN,ETN,JX,S,O)@(모음)}
+
+
+// =============================================================================
+// 호격 조사 (JKV)
+// =============================================================================
+아:{[아/JKV]#(N,XSN,ETN,S,O)@(자음)}
+야:{[야/JKV]#(N,XSN,ETN,S,O)@(모음)}
+여:{[여/JKV]#(N,XSN,ETN,S,O)@(모음)}
+이여:{[이여/JKV]#(N,XSN,ETN,S,O)@(자음)}
+시여:{[시여/JKV]#(N,XSN,ETN,S,O)@(모음)}
+이시여:{[이시여/JKV]#(N,XSN,ETN,S,O)@(자음)}
+
+
+// =============================================================================
+// 인용격 조사 (JKQ)
+// =============================================================================
+고:{[고/JKQ]#(EF)@(모음)}
+라고:{[라고/JKQ]#(EF)@(모음)}
+라:{[라/JKQ]#(EF)@(모음)}
+이라고:{[이라고/JKQ]#(N,XSN,ETN,S,O)@(자음)}
+이라:{[이라/JKQ]#(N,XSN,ETN,S,O)@(자음)}
+
+// 준말
+랍:{[라고/JKQ+하/VV]#(N,XSN,V,M,IC,J,E,XS,S,O)&(ㅂ)@(모음)}
+이랍:{[이라고/JKQ+하/VV]#(N,XSN,V,M,IC,J,E,XS,S,O)&(ㅂ)@(자음)}
+란:{[라고/JKQ+하/VV+는/ETM]#(N,XSN,V,M,IC,J,E,XS,S,O)@(모음)}
+라는:{[라고/JKQ+하/VV+는/ETM]#(N,XSN,V,M,IC,J,E,XS,S,O)@(모음)}
+이란:{[이라고/JKQ+하/VV+는/ETM]#(N,XSN,V,M,IC,J,E,XS,S,O)@(자음)}
+이라는:{[이라고/JKQ+하/VV+는/ETM]#(N,XSN,V,M,IC,J,E,XS,S,O)@(자음)}
+
+
+// =============================================================================
+// 보조사 (JX)
+// =============================================================================
+//ㄴ:{[ㄴ/JX]#(N,XSN,MAG,EM,J,S,O)@(모음)}
+//ㄴ들:{[ㄴ들/JX]#(N,XSN,EC,JKB,JX,S,O)&(ㄹ)@(모음)}
+//ㄴ즉:{[ㄴ즉/JX]#(N,XSN,ETN,S,O)@(모음)}
+//ㄹ:{[ㄹ/JX]#(MAG,JKB,EC,S,O)@(모음)}
+//ㄹ랑:{[ㄹ랑/JX]#(N,XSN,ETN,S,O)@(모음)}
+인들:{[인들/JX]#(N,XSN,EC,JKB,JX,S,O)&(ㄹ)@(자음)}
+인즉:{[인즉/JX]#(N,XSN,ETN,S,O)@(자음)}
+인즉슨:{[인즉슨/JX]#(N,XSN,ETN,S,O)@(자음)}
+를:{[를/JX]#(MAG,JKB,EC,S,O)@(모음)}
+일랑:{[일랑/JX]#(N,XSN,ETN,S,O)@(자음)}
+가:{[가/JX]#(N,XSN,EC,S,O)@(모음)}
+// 거나:{[거나/JX]#(V,EP,EFN,S,O)}
+거나:{[거나/JX]#(N,XSN,ETN,EC,S,O)@(모음)}
+곧:{[곧/JX]#(N,XSN,ETN,S,O)}
+그래:{[그래/JX]#(EF,S,O)}
+그려:{[그려/JX]#(EF,S,O)}
+까지:{[까지/JX]#(N,XSN,ET,J,S,O)}
+까진:{[까지/JX+는/JX]#(N,XSN,ET,J,S,O)}
+깨나:{[깨나/JX]#(N,XSN,S,O)@(모음)}
+나:{[나/JX]#(N,XSN,MAG,ET,J,S,O)@(모음)}
+이나:{[이나/JX]#(N,XSN,MAG,ET,J,S,O)@(자음)}
+나마:{[나마/JX]#(N,XSN,M,ET,J,S,O)@(모음)}
+이나마:{[이나마/JX]#(N,XSN,M,ET,J,S,O)@(자음)}
+는:{[는/JX]#(N,XSN,MAG,JKB,ETN,EC,S,O)@(모음)}
+다가:{[다가/JX]#(MAG,EC,JKB,JX,S,O)@(모음)}
+대로:{[대로/JX]#(N,XSN,ETN,S,O)}
+데로:{[대로/JX]#(N,XSN,ETN,S,O)}
+더러:{[더러/JX]#(N,XSN,S,O)}
+도:{[도/JX]#(N,ETN,XSN,MAG,EC,JKB,S,O)}
+두:{[두/JX]#(N,ETN,XSN,MAG,EC,JKB,S,O)}
+든:{[든/JX]#(N,XSN,ETN,M,J,S,O)@(모음)}
+이든:{[이든/JX]#(N,XSN,ETN,M,J,S,O)@(자음)}
+든지:{[든지/JX]#(N,XSN,EF,MAG,S,O)@(모음)}
+이든지:{[이든지/JX]#(N,XSN,EF,MAG,S,O)@(자음)}
+든가:{[든가/JX]#(N,XSN,EF,MAG,S,O)@(모음)}
+이든가:{[이든가/JX]#(N,XSN,EF,MAG,S,O)@(자음)}
+던가:{[던가/JX]#(N,XSN,EF,MAG,S,O)@(모음)}
+이던가:{[이던가/JX]#(N,XSN,EF,MAG,S,O)@(자음)}
+들:{[들/JX]#(MAG,JKB,EC,S,O)}
+따라:{[따라/JX]#(N,XSN,ETN,S,O)}
+라고:{[라고/JX]#(N,XSN,ETN,S,O)@(모음)}
+이라:{[이라/JX]#(N,XSN,ETN,S,O)@(자음)}
+이라고:{[이라고/JX]#(N,XSN,ETN,S,O)@(자음)}
+이라곤:{[이라고/JX+ㄴ/JX]#(N,XSN,ETN,S,O)@(자음)}
+라도:{[라도/JX]#(N,XSN,J,ETN,S,O)@(모음)}
+이라도:{[이라도/JX]#(N,XSN,J,ETN,S,O)@(자음)}
+든지:{[든지/JX]#(N,XSN,EF,MAG,S,O)@(모음)}
+라든지:{[라든지/JX]#(N,XSN,MAG,JX,JKB,EC,S,O)@(모음)}
+이라든지:{[이라든지/JX]#(N,J,EM,S,O)@(자음)}
+라야:{[라야/JX]#(N,XSN,JX,JKB,EC,S,O)@(모음)}
+이라야:{[이라야/JX]#(N,XSN,JX,JKB,EC,S,O)@(자음)}
+란:{[란/JX]#(N,XSN,ETN,S,O)@(모음)}
+이란:{[이란/JX]#(N,XSN,ETN,S,O)@(자음)}
+마는:{[마는/JX]#(EF)}
+마다:{[마다/JX]#(N,XSN,ETN,S,O)}
+마저:{[마저/JX]#(N,ETN,EC,S,O)}
+만:{[만/JX]#(N,M,J,ETN,EC,S,O,EF)}
+만큼:{[만큼/JX]#(N,XSN,ETN,J,S,O)}
+만치:{[만치/JX]#(N,XSN,ETN,J,S,O)}
+밖에:{[밖에/JX]#(N,XSN,ETN,J,S,O)}
+밖에:{[밖에/JX]#(N,XSN,ETN,J,S,O)}
+밖엔:{[밖에/JX+ㄴ/JX]#(N,XSN,ETN,J,S,O)}
+부터:{[부터/JX]#(N,XSN,ETN,EC,J,S,O)}
+부턴:{[부터/JX+ㄴ/JX]#(N,XSN,ETN,EC,J,S,O)}
+서껀:{[서껀/JX]#(N,XSN,ETN)}
+새로에:{[새로에/JX]#(JX)}
+뿐:{[뿐/JX]#(N,XSN,ETN,EC,J,S,O)}
+손:{[손/JX]#(EFN)}
+야:{[야/JX]#(N,XSN,ETN,EC,J,S,O)@(모음)}
+이야:{[이야/JX]#(N,XSN,ETN,EC,J,S,O)@(자음)}
+야말로:{[야말로/JX]#(N,XSN,ETN,EC,MAG,J,S,O)@(모음)}
+이야말로:{[이야말로/JX]#(N,XSN,ETN,EC,MAG,J,S,O)@(자음)}
+엔들:{[엔들/JX]#(N,XSN,ETN,JX,S,O)&(ㄹ)}
+엘:{[에/JKB+ㄹ/JX]#(N,XSN,ETN,JX,S,O)&(ㄹ)}
+엘랑:{[에/JKB+ㄹ랑/JX]#(N,XSN,ETN,JX,S,O)}
+요:{[요/JX]#(N,XSN,ETN,MAG,JX,JKB)}
+은:{[은/JX]#(N,XSN,ETN,EC,MAG,JX,XR,S,O)@(자음)}
+을:{[을/JX]#(N,XSN,ETN,S,O)@(자음)}
+을랑:{[을랑/JX]#(N,XSN,ETN,S,O)@(자음)}
+이:{[이/JX]#(N,XSN,ETN,MA,JKB,S,O)@(자음)}
+조차:{[조차/JX]#(N,XSN,ETN,S,O)}
+치고:{[치고/JX]#(N,XSN,ETN,S,O)}
+커녕:{[커녕/JX]#(N,XSN,ETN,S,O)}
+토록:{[토록/JX]#(N,XSN,ETN,S,O)}
+
+
+
+// =============================================================================
+// 접속 조사 (JC)
+// =============================================================================
+고:{[고/JC]#(N,ETN,JX,S,O)@(모음)}
+구:{[구/JC]#(N,ETN,JX,S,O)@(모음)}
+와:{[와/JC]#(N,ETN,EC,JX,S,O)@(모음)}
+과:{[과/JC]#(N,ETN,JX,S,O)@(자음)}
+나:{[나/JC]#(N,ETN,EC,JX,S,O)@(모음)}
+니:{[니/JC]#(N,ETN,JX,S,O)@(모음)}
+다:{[다/JC]#(N,ETN,JX,S,O)@(모음)}
+며:{[며/JC]#(N,ETN,JX,S,O)@(모음)}
+랑:{[랑/JC]#(N,ETN,JX,S,O)@(모음)}
+요:{[요/JC]#(N,ETN,JX,S,O)@(모음)}
+에:{[에/JC]#(N,ETN,JX,S,O)}
+에다:{[에다/JC]#(N,ETN,JX,S,O)}
+에단:{[에다/JC+는/JX]#(N,ETN,JX,S,O)}
+이고:{[이고/JC]#(N,J,EM,S,O)@(자음)}
+이구:{[이구/JC]#(N,J,EM,S,O)@(자음)}
+이나:{[이나/JC]#(N,ETN,JX,S,O)@(자음)}
+이니:{[이니/JC]#(N,ETN,JX,S,O)@(자음)}
+이다:{[이다/JC]#(N,ETN,JX,S,O)@(자음)}
+이며:{[이며/JC]#(N,ETN,JX,S,O)@(자음)}
+이랑:{[이랑/JC]#(N,ETN,JX,S,O)@(자음)}
+이요:{[이요/JC]#(N,ETN,JX,S,O)@(자음)}
+하고:{[하고/JC]#(N,XSN,ETN,S,O)}
+하곤:{[하고/JC+는/JX]#(N,XSN,ETN,S,O)}
+하며:{[하며/JC]#(N,XSN,ETN,S,O)}
+
+
+
+// =============================================================================
+// 지정사
+// =============================================================================
+// VCN
+아니:{[아니/VCN]#(S)&(모음)}
+아닌:{[아니/VCN+ㄴ/ETM]#(S)&(ㄴ)}
+아닐:{[아니/VCN+ㄹ/ETM]#(S)&(ㄹ)}
+아님:{[아니/VCN+ㅁ/ETN]#(S)&(ㅁ)}
+아닙:{[아니/VCN]#(S)&(ㅂ)}
+아냐:{[아니/VCN+야/EFN]#(S)&(모음)}
+
+// VCP
+이:{[이/VCP]#(N,XSN,MAG,ETN,J,S,O)}
+인:{[이/VCP+ㄴ/ETM]#(N,XSN,MAG,ETN,J,S,O)&(ㄴ)}
+일:{[이/VCP+ㄹ/ETM]#(N,XSN,MAG,ETN,J,S,O)&(ㄹ)}
+임:{[이/VCP+ㅁ/ETN]#(N,XSN,MAG,ETN,J,S,O)&(ㅁ)}
+입:{[이/VCP]#(N,XSN,MAG,ETN,J,S,O)&(ㅂ)}
+겠:{[이/VCP+겠/EPT]#(N,XSN,MAG,ETN)&(겠)}
+고:{[이/VCP+고/EC]#(N,XSN,MAG,ETN)@(모음)}
+냐:{[이/VCP+냐/EFQ]#(N,XSN,ETN)@(모음)}
+네:{[이/VCP+네/EFN]#(N,XSN,ETN,S,O)@(모음)}
+다:{[이/VCP+다/EFN]#(N,XSN,ETN,S,O)@(모음)}
+라:{[이/VCP+라/EFN]#(N,XSN,ETN,S,O)@(모음)}
+라:{[이/VCP+라/EC]#(N,XSN,ETN,S,O)@(모음)}
+면:{[이/VCP+면/EC]#(N,XSN,ETN,S,O)@(모음)}
+였:{[이/VCP+었/EPT]#(N,XSN,ETN,S,O)@(모음)}
+요:{[이/VCP+요/EFN]#(N,XSN,MAG,ETN,S,O)}
+구나:{[이/VCP+구나/EFI]#(N,XSN,ETN,S,O)}
+지만:{[이/VCP+지만/EC]#(N,XSN,ETN,S,O)}
+라면:{[이/VCP+라면/EC]#(N,XSN,ETN,S,O)@(모음)}
+라오:{[이/VCP+라오/EFN]#(N,XSN,ETN)@(모음)}
+라지:{[이/VCP+라지/EFN]#(N,XSN,ETN)@(모음)}
+로군:{[이/VCP+로군/EFI]#(N,XSN,ETN)@(모음)}
+로다:{[이/VCP+로다/EFI]#(N,XSN,ETN)@(모음)}
+로되:{[이/VCP+로되/EC]#(N,XSN,ETN)@(모음)}
+로세:{[이/VCP+로세/EFI]#(N,XSN,ETN)@(모음)}
+예요:{[이/VCP+에요/EFN]#(N,XSN,MAG,ETN,JX,S,O)}
+이랄:{[이/VCP+라고/EC+하/VV+ㄹ/ETM]#(N,XSN,ETN,S,O)@(자음)}
+랍니다:{[이/VCP+랍니다/EFN]#(N,XSN,ETN,S,O)@(모음)}
+랍니당:{[이/VCP+랍니다/EFN]#(N,XSN,ETN,S,O)@(모음)}
+로구나:{[이/VCP+로구나/EFI]#(N,XSN,ETN)@(모음)}
+더군:{[이/VCP+더군/EFN]#(N,XSN,ETN)@(모음)}
+더구나:{[이/VCP+더구나/EFN]#(N,XSN,ETN)@(모음)}
+더구려:{[이/VCP+더구려/EFN]#(N,XSN,ETN)@(모음)}
+더니:{[이/VCP+더니/EFN]#(N,XSN,ETN)@(모음)}
+더니라:{[이/VCP+더니라/EFN]#(N,XSN,ETN)@(모음)}
+더니이다:{[이/VCP+더니이다/EFN]#(N,XSN,ETN)@(모음)}
+더라:{[이/VCP+더라/EFN]#(N,XSN,ETN)@(모음)}
+더라나:{[이/VCP+더라나/EFN]#(N,XSN,ETN)@(모음)}
+더라네:{[이/VCP+더라네/EFN]#(N,XSN,ETN)@(모음)}
+더라넹:{[이/VCP+더라네/EFN]#(N,XSN,ETN)@(모음)}
+더라죠:{[이/VCP+더라죠/EFN]#(N,XSN,ETN)@(모음)}
+더라죵:{[이/VCP+더라죠/EFN]#(N,XSN,ETN)@(모음)}
+더라지:{[이/VCP+더라죠/EFN]#(N,XSN,ETN)@(모음)}
+더람:{[이/VCP+더람/EFN]#(N,XSN,ETN)@(모음)}
+더이다:{[이/VCP+더이다/EFN]#(N,XSN,ETN)@(모음)}

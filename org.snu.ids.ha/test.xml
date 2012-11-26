@@ -1,0 +1,195 @@
+<li class="category " categoryId="392" depth="1" hasEntry="N" clickname="ckc">한국민족문화대백과</li>
+<li class="category " categoryId="200000001" depth="1" hasEntry="N" clickname="cds">두산백과</li>
+<li class="category " categoryId="3061" depth="1" hasEntry="N" clickname="che">어린이백과</li>
+<li class="category " categoryId="3422" depth="1" hasEntry="N" clickname="cse">학생백과</li>
+<li class="category " categoryId="3105" depth="1" hasEntry="N" clickname="cig">인포그래픽스</li>
+<li class="category  category_seperator" categoryId="48" depth="1" hasEntry="N" clickname="chs">인문과학
+</li>
+<li class="category " categoryId="50" depth="1" hasEntry="N" clickname="css">사회과학</li>
+<li class="category " categoryId="51" depth="1" hasEntry="N" clickname="cnc">자연과학</li>
+<li class="category " categoryId="52" depth="1" hasEntry="N" clickname="cte">기술/공학</li>
+<li class="category " categoryId="53" depth="1" hasEntry="N" clickname="cca">문화예술</li>
+<li class="category " categoryId="54" depth="1" hasEntry="N" clickname="cls">생활/레저</li>
+<li class="category " categoryId="55" depth="1" hasEntry="N" clickname="cag">지역/지리</li>
+<li class="category " categoryId="56" depth="1" hasEntry="N" clickname="cht">역사</li>
+<li class="category " categoryId="57" depth="1" hasEntry="N" clickname="cap">동물/식물</li>
+<li class="category " categoryId="58" depth="1" hasEntry="N" clickname="chm">건강/의학</li>
+<li class="category " categoryId="59" depth="1" hasEntry="N" clickname="ccc">컴퓨터/통신</li>
+<li class="category open" categoryId="60" depth="1" hasEntry="N" clickname="cpr">
+	인물
+	<ul class="depth2">
+		<li class="category open select" categoryId="210" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>정치인</span>
+			<ul class="depth3">
+				<li class="category " categoryId="927" depth="3" hasEntry="Y" clickname="cpr">
+					<span>한국정치인</span>
+				</li>
+				<li class="category " categoryId="928" depth="3" hasEntry="Y" clickname="cpr">
+					<span>중국정치인</span>
+				</li>
+				<li class="category " categoryId="929" depth="3" hasEntry="Y" clickname="cpr">
+					<span>일본정치인</span>
+				</li>
+				<li class="category " categoryId="930" depth="3" hasEntry="Y" clickname="cpr">
+					<span>북한정치인</span>
+				</li>
+				<li class="category " categoryId="931" depth="3" hasEntry="Y" clickname="cpr">
+					<span>인도정치인</span>
+				</li>
+				<li class="category " categoryId="932" depth="3" hasEntry="Y" clickname="cpr">
+					<span>영국정치인</span>
+				</li>
+				<li class="category " categoryId="933" depth="3" hasEntry="Y" clickname="cpr">
+					<span>독일정치인</span>
+				</li>
+				<li class="category " categoryId="934" depth="3" hasEntry="Y" clickname="cpr">
+					<span>프랑스정치인</span>
+				</li>
+				<li class="category " categoryId="935" depth="3" hasEntry="Y" clickname="cpr">
+					<span>러시아정치인</span>
+				</li>
+				<li class="category " categoryId="936" depth="3" hasEntry="Y" clickname="cpr">
+					<span>미국정치인</span>
+				</li>
+				<li class="category " categoryId="937" depth="3" hasEntry="Y" clickname="cpr">
+					<span>기타외국정치인</span>
+				</li>
+			</ul>
+		</li>
+		<li class="category " categoryId="211" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>종교인</span>
+		</li>
+		<li class="category " categoryId="212" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>스포츠인</span>
+		</li>
+		<li class="category " categoryId="213" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>언론인/기자</span>
+		</li>
+		<li class="category " categoryId="214" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>의료인</span>
+		</li>
+		<li class="category " categoryId="2667" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>기업인</span>
+		</li>
+		<li class="category " categoryId="215" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>법조인</span>
+		</li>
+		<li class="category " categoryId="216" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>교육인</span>
+		</li>
+		<li class="category " categoryId="2974" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>사회/인권운동가</span>
+		</li>
+		<li class="category " categoryId="217" depth="2" hasEntry="Y" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>공무원/군인</span>
+		</li>
+		<li class="category " categoryId="218" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>문학인</span>
+		</li>
+		<li class="category " categoryId="2998" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>문화예술인</span>
+		</li>
+		<li class="category " categoryId="221" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>사회학자</span>
+		</li>
+		<li class="category " categoryId="2668" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>경제학자</span>
+		</li>
+		<li class="category " categoryId="224" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>어학자</span>
+		</li>
+		<li class="category " categoryId="225" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>역사학자</span>
+		</li>
+		<li class="category " categoryId="226" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>지리학자</span>
+		</li>
+		<li class="category " categoryId="227" depth="2" hasEntry="Y" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>수학자/과학자</span>
+		</li>
+		<li class="category " categoryId="228" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>철학자</span>
+		</li>
+		<li class="category " categoryId="3053" depth="2" hasEntry="Y" clickname="cpr">
+			<span>심리학자</span>
+		</li>
+		<li class="category " categoryId="2994" depth="2" hasEntry="Y" clickname="cpr">
+			<span>일반학자</span>
+		</li>
+		<li class="category " categoryId="2870" depth="2" hasEntry="Y" clickname="cpr">
+			<span>독립운동가/의병</span>
+		</li>
+		<li class="category " categoryId="2871" depth="2" hasEntry="N" clickname="cpr">
+			<button class="btn_tree" type="button">
+				<span>카테고리 여닫기</span>
+			</button>
+			<span>왕족</span>
+		</li>
+		<li class="category " categoryId="229" depth="2" hasEntry="Y" clickname="cpr">
+			<span>기타인물</span>
+		</li>
+	</ul>
+</li>
+<li class="category " categoryId="61" depth="1" hasEntry="N" clickname="cog">기관/단체</li>
+<li class="category " categoryId="2874" depth="1" hasEntry="N" clickname="cgl">용어해설</li>
+<li class="category  category_seperator" categoryId="3104" depth="1" hasEntry="N" clickname="cga">미술작품
+</li>
+<li class="category " categoryId="2705" depth="1" hasEntry="N" clickname="chr">역사기록물</li>
+<li class="category " categoryId="3388" depth="1" hasEntry="N" clickname="cuh">유네스코세계유산</li>
