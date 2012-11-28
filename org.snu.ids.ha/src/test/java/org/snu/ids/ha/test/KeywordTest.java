@@ -5,12 +5,14 @@ import java.util.List;
 
 import junit.framework.TestCase;
 
+import org.snu.ids.ha.core.CharArray;
 import org.snu.ids.ha.core.Keyword;
 import org.snu.ids.ha.core.MAnalyzerFull;
 import org.snu.ids.ha.core.MAnalyzerLite;
 import org.snu.ids.ha.core.MAnalyzerMini;
 import org.snu.ids.ha.core.MProcessor;
 import org.snu.ids.ha.core.Sentence;
+import org.snu.ids.ha.dic.MorpDic;
 import org.snu.ids.ha.util.Timer;
 
 
@@ -27,6 +29,8 @@ public class KeywordTest
 		str = "그 땐 단지 ‘IMF라는 것이 나쁜거구나’ 라고만 생각했지 그것이 정확히 무엇인지 몰랐습니다.";
 		str = "정거장에서 사건이 생기면, 그것은 이 소설의 배경이지만, 정거장이기 때문에 사건이 생기면, 그 정거장은 이 소설의 모티브가 되는 것이다.";
 		str = "내가 만일 안철수라면";
+		
+		System.out.println(MorpDic.getInstance().get(new CharArray("안철수")));
 	}
 
 

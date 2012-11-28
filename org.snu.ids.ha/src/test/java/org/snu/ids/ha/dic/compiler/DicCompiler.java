@@ -27,7 +27,7 @@ public class DicCompiler
 		// 형태소 사전 compile하기 전에 확률 사전 먼저 compile해 두어야 함.
 		// 기분석 사전 compile
 		MorpDicCompiler.compile("src/main/resources/dic/compile.dic");
-		MorpDicCompiler.print(DIC_ROOT + "/dic.txt");
+		//MorpDicCompiler.print(DIC_ROOT + "/dic.txt");
 	}
 
 }

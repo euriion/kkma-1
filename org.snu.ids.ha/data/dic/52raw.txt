@@ -149,3 +149,5 @@
 주가:{[주/NNM+가/JKC]#(NR)}
 그를:{[그/NP+를/JKO]&(F)}
 인지:{[이/VCP+ㄴ지/EC]#(N,J,S,MAG,ETN,XSN,OL,OH)}
+// 안철수라면과 같이 (이/VCP)가 생략되는 경우
+라면:{[이/VCP+라면/EC]#(N,XSN,ETN,S)@(모음)}

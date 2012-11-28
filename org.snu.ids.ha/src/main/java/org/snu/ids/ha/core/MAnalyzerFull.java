@@ -59,6 +59,16 @@ public class MAnalyzerFull
 		}
 		return ret;
 	}
+	
+	
+	private String getBestLinkStr(MCandidate mCand)
+	{
+		StringBuffer sb = new StringBuffer();
+		for( MCandidate mc = mCand; mc != null; mc = mc.prevBestMC ) {
+			sb.insert(0, (mc.withSpace ? "+ +" : "+") + mc.getMorpStr());
+		}
+		return sb.toString();
+	}
 
 
 	protected CandidateList analyze(CandidateList prevCands, Token token)
@@ -81,32 +91,39 @@ public class MAnalyzerFull
 		int len = token.length;
 		CandidateList[] mem = new CandidateList[len];
 
-		// 종결되지 않았는지 확인하여 종결되지 않은 경우에는 미등록 명사를 추가해 줌
-		boolean onlyPartial = true;
-
 		// implement Viterbi algorithm
 		for( int i = 0; i < len; i++ ) {
 			// init memory of i-th position
 			mem[i] = new CandidateList();
+			
+			System.out.println();
+			System.out.println();
 
 			for( int j = Math.max(0, i - MAX_WORD_LEN); j <= i; j++ ) {
 				CharArray tail = token.subCharArray(j, i - j + 1);
 				for( MCandidate mc : getCands(tail) ) {
-					// find and set the best match
+					// find and set the best match, then add to the analyzed list
 					if( (mc = getBestMC(j == 0 ? prevCands : mem[j - 1], mc)) != null ) {
-						// add candidate
 						mem[i].add(mc);
-						// 종결되지 않았는지 확인
-						if( i == len - 1 && onlyPartial && !mc.isLastTagOf(POSTag.V | POSTag.EP | POSTag.XP) ) {
-							onlyPartial = false;
-						}
 					}
 				}
 			}
 		}
 
-		// 접속 가능한 것이 없거나, 불완전한 어휘인 경우 미 등록 명사 추가
-		if( mem[len - 1].size() == 0 || onlyPartial ) {
+		// 종결되지 않았는지 확인하여 종결되지 않은 경우에는 미등록 명사를 추가해 줌
+		boolean onlyPartial = true;
+		// 최종 분석 결과가 1개 이상인 경우에만 종결 여부 확인, 최종 분석 결과가 없다면 미종결로 처리
+		if( mem[len - 1].size() > 0 ) {
+			for( MCandidate mc : mem[len - 1] ) {
+				if( onlyPartial && !mc.isLastTagOf(POSTag.V | POSTag.EP | POSTag.XP) ) {
+					onlyPartial = false;
+					break;
+				}
+			}
+		}
+
+		// 불완전한 어휘인 경우 미 등록 명사 추가
+		if( onlyPartial ) {
 			MCandidate mc = getCandUN(token);
 			MCandidate org = mc;
 			mc = getBestMC(prevCands, mc);
@@ -279,6 +296,8 @@ public class MAnalyzerFull
 				//System.out.println("SPACING2 : " + (newLnprOfBestSpacing + newLnprOfBestTagging));
 				//System.out.println("SPACING3 : " + bestMC);
 			}
+			
+			System.out.println(mc + " " + getBestLinkStr(mc));
 		}
 
 		return bestMC;
