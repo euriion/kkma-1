@@ -61,7 +61,7 @@ public class MAnalyzerFull
 	}
 	
 	
-	private String getBestLinkStr(MCandidate mCand)
+	public String getBestLinkStr(MCandidate mCand)
 	{
 		StringBuffer sb = new StringBuffer();
 		for( MCandidate mc = mCand; mc != null; mc = mc.prevBestMC ) {
@@ -96,9 +96,6 @@ public class MAnalyzerFull
 			// init memory of i-th position
 			mem[i] = new CandidateList();
 			
-			System.out.println();
-			System.out.println();
-
 			for( int j = Math.max(0, i - MAX_WORD_LEN); j <= i; j++ ) {
 				CharArray tail = token.subCharArray(j, i - j + 1);
 				for( MCandidate mc : getCands(tail) ) {
@@ -242,7 +239,9 @@ public class MAnalyzerFull
 					float newLnprOfBestTagging = 0;
 					float tempLnpr = ProbDicSet.getLnprMorpsGExp(prevMC.getLastWord(), prevMC.getLastTagNum(), mc.getFirstWord(), mc.getFirstTagNum());
 					if( tempLnpr <= 0 ) {
-						newLnprOfBestTagging = prevMC.lnprOfBestTagging - ProbDicSet.getLnprPosGExp(prevMC.getLastWord(), prevMC.getLastTagNum());
+						// 2012-12-02 probability computation looks like a bug
+						// newLnprOfBestTagging = prevMC.lnprOfBestTagging - ProbDicSet.getLnprPosGExp(prevMC.getLastWord(), prevMC.getLastTagNum());
+						newLnprOfBestTagging = prevMC.lnprOfBestTagging;
 						newLnprOfBestTagging += mc.lnprOfTagging + tempLnpr - ProbDicSet.getLnprPosGExp(mc.getFirstWord(), mc.getFirstTagNum());
 					} else {
 						newLnprOfBestTagging = prevMC.lnprOfBestTagging + mc.lnprOfTagging;
@@ -297,7 +296,7 @@ public class MAnalyzerFull
 				//System.out.println("SPACING3 : " + bestMC);
 			}
 			
-			System.out.println(mc + " " + getBestLinkStr(mc));
+			//System.out.println(mc + " " + getBestLinkStr(mc));
 		}
 
 		return bestMC;
