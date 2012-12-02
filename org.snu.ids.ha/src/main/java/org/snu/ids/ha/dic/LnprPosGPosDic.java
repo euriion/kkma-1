@@ -18,7 +18,7 @@ public class LnprPosGPosDic
 
 		try {
 			//bbr = new ByteBufferedReader(new FileInputStream(fileName));
-			bbr = new ByteBufferedReader(ClassLoader.getSystemResourceAsStream(fileName));
+			bbr = new ByteBufferedReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName));
 			for( int i = 0; i < 64; i++ ) {
 				bucket[i] = bbr.readFloatA(64);
 			}

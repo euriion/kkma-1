@@ -28,7 +28,7 @@ public class LnprMorpsGExpDic
 
 		try {
 			//bbr = new ByteBufferedReader(new FileInputStream(fileName));
-			bbr = new ByteBufferedReader(ClassLoader.getSystemResourceAsStream(fileName));
+			bbr = new ByteBufferedReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName));
 
 			bucketSize = bbr.readInt();
 			int valSize = bbr.readInt();

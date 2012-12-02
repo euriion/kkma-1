@@ -17,7 +17,7 @@ public class NaverDicCrawler
 		URLConnection urlCon = null;
 
 		BufferedReader br = null;
-		
+
 		StringBuffer sb = new StringBuffer();
 		try {
 			url = new URL(urlStr);
@@ -30,9 +30,11 @@ public class NaverDicCrawler
 				if( line.trim().startsWith("<li class=\"category \"") ) {
 					line = line.trim().replaceAll("</*a[^>]*>", "");
 					line = line.replaceAll("<img[^>]*>", "");
-					System.out.println(line);
+					line = line.replaceAll("<button class=\"btn_tree\" type=\"button\"><span>카테고리 여닫기</span></button>", "");
+					line = line.trim().replaceAll("</*span>", "");
+					System.out.println("<category>" + line + "</category>");
 				}
-				sb.append(line+"\n");
+				sb.append(line + "\n");
 			}
 			br.close();
 		} catch (Exception e) {

@@ -22,7 +22,7 @@ public class LnprSyllableUniNounDic
 
 		try {
 			//bbr = new ByteBufferedReader(new FileInputStream(fileName));
-			bbr = new ByteBufferedReader(ClassLoader.getSystemResourceAsStream(fileName));
+			bbr = new ByteBufferedReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName));
 
 			min = bbr.readInt();
 			bucketSize = bbr.readInt();

@@ -18,7 +18,7 @@ public class LnprPosDic
 
 		try {
 			// bbr = new ByteBufferedReader(new FileInputStream(fileName));
-			bbr = new ByteBufferedReader(ClassLoader.getSystemResourceAsStream(fileName));
+			bbr = new ByteBufferedReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName));
 			bucket = bbr.readFloatA(64);
 			bbr.close();
 		} catch (Exception e) {

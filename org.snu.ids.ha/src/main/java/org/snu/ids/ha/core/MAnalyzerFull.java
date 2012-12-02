@@ -240,7 +240,7 @@ public class MAnalyzerFull
 					float tempLnpr = ProbDicSet.getLnprMorpsGExp(prevMC.getLastWord(), prevMC.getLastTagNum(), mc.getFirstWord(), mc.getFirstTagNum());
 					if( tempLnpr <= 0 ) {
 						// 2012-12-02 probability computation looks like a bug
-						// newLnprOfBestTagging = prevMC.lnprOfBestTagging - ProbDicSet.getLnprPosGExp(prevMC.getLastWord(), prevMC.getLastTagNum());
+						//newLnprOfBestTagging = prevMC.lnprOfBestTagging - ProbDicSet.getLnprPosGExp(prevMC.getLastWord(), prevMC.getLastTagNum());
 						newLnprOfBestTagging = prevMC.lnprOfBestTagging;
 						newLnprOfBestTagging += mc.lnprOfTagging + tempLnpr - ProbDicSet.getLnprPosGExp(mc.getFirstWord(), mc.getFirstTagNum());
 					} else {
