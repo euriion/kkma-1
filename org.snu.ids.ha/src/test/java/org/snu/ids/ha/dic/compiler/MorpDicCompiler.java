@@ -110,7 +110,10 @@ public class MorpDicCompiler
 	{
 		// simple
 		loadSimple(DicCompiler.DIC_ROOT + "/00nng.txt");
-		loadSimple(DicCompiler.DIC_ROOT + "/01nnp.txt");
+		loadSimple(DicCompiler.DIC_ROOT + "/01nnp_person.txt");
+		loadSimple(DicCompiler.DIC_ROOT + "/01nnp_place.txt");
+		loadSimple(DicCompiler.DIC_ROOT + "/01nnp_chem.txt");
+		loadSimple(DicCompiler.DIC_ROOT + "/01nnp_com.txt");
 		loadSimple(DicCompiler.DIC_ROOT + "/02nnb.txt");
 		loadSimple(DicCompiler.DIC_ROOT + "/03nr.txt");
 		loadSimple(DicCompiler.DIC_ROOT + "/04np.txt");

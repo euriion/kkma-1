@@ -37,12 +37,58 @@ public class NaverDicCrawler
 		//crawler.printCatTree();
 		//crawler.parseCatPage();
 		//System.out.println(crawler.parseCatPage("file:///D:\\git-local\\kkma\\org.snu.ids.ha\\cat\\51.html", "54", 1));
-		crawler.printWord();
+		//crawler.printWord();
+		crawler.printPerson("60");
 
 	}
 
 
 	Logger	logger	= Logger.getLogger(NaverDicCrawler.class);
+
+
+	public void printPerson(String catId)
+	{
+		List<DicCat> catList = this.getCatList();
+		DicCat dicCat = null;
+		for( DicCat dc : catList ) {
+			if( dc.id.equals(catId) ) {
+				dicCat = dc;
+			}
+		}
+
+		catList = new ArrayList<DicCat>();
+		setParent(dicCat, 0, catList);
+
+		BufferedReader br = null;
+		String line = null;
+		PrintWriter pw = null;
+		try {
+			pw = new PrintWriter("person.txt", "utf-8");
+			for( DicCat dc : catList ) {
+				File file = new File("cat/data/" + dc.id + ".txt");
+				if( !file.exists() ) continue;
+				System.out.println(dc);
+				try {
+					br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "utf-8"));
+					while( (line = br.readLine()) != null ) {
+						String name = line.substring(0, line.indexOf(','));
+						if( name.indexOf(' ') > 0 ) continue;
+						pw.println(name);
+					}
+					br.close();
+					pw.flush();
+				} catch (Exception e) {
+					System.err.println(file);
+					System.err.println(line);
+					e.printStackTrace();
+				}
+			}
+			pw.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
 
 
 	public void printWord()

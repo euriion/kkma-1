@@ -37,6 +37,7 @@ public class KkmaTest
 		str = "불의 잔";
 		str = "김씨가";
 		str = "내가 만일 안철수라면";
+		str = "황수정 복귀";
 	}
 
 
