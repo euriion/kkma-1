@@ -15,6 +15,24 @@ import org.snu.ids.ha.util.Timer;
 
 public class ProbDicCompiler
 {
+	public static void main(String[] args)
+	{
+		// 음절 확률 사전
+		compileLnprSyllableBi(DicCompiler.DIC_ROOT + "/prob/lnpr_syllable_bi.txt", "src/main/resources/dic/compile_lnpr_syllable_bi.dic");
+		ProbDicCompiler.compileLnprSyllableUniNoun(DicCompiler.DIC_ROOT + "/prob/lnpr_syllable_uni_noun.txt", "src/main/resources/dic/compile_lnpr_syllable_uni_noun.dic");
+
+		// 확률 사전 compile
+		compileLnprPos(DicCompiler.DIC_ROOT + "/prob/lnpr_pos.txt", "src/main/resources/dic/compile_lnpr_pos.dic");
+		compilePosGPos(DicCompiler.DIC_ROOT + "/prob/lnpr_pos_g_pos_intra.txt", "src/main/resources/dic/compile_lnpr_pos_g_pos_intra.dic");
+		compilePosGPos(DicCompiler.DIC_ROOT + "/prob/lnpr_pos_g_pos_inter.txt", "src/main/resources/dic/compile_lnpr_pos_g_pos_inter.dic");
+		compileLnprMorp(DicCompiler.DIC_ROOT + "/prob/lnpr_morp.txt", "src/main/resources/dic/compile_lnpr_morp.dic");
+		compileLnprMorp(DicCompiler.DIC_ROOT + "/prob/lnpr_pos_g_exp.txt", "src/main/resources/dic/compile_lnpr_pos_g_exp.dic");
+		compileLnprMorpsGExp(DicCompiler.DIC_ROOT + "/prob/lnpr_morps_g_exp.txt", "src/main/resources/dic/compile_lnpr_morps_g_exp.dic");
+		compileLnprPosGMorp(DicCompiler.DIC_ROOT + "/prob/lnpr_pos_g_morp_intra.txt", "src/main/resources/dic/compile_lnpr_pos_g_morp_intra.dic");
+		compileLnprPosGMorp(DicCompiler.DIC_ROOT + "/prob/lnpr_pos_g_morp_inter.txt", "src/main/resources/dic/compile_lnpr_pos_g_morp_inter.dic");
+	}
+
+
 	public static void compileLnprSyllableUniNoun(String srcFileName, String targetFileName)
 	{
 		Timer timer = new Timer();
